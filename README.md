@@ -21,6 +21,11 @@ por ejemplo `https://pacientes-odontologia.vercel.app`.
   Supabase, así que ya no aplica el límite de 8 MB del puente) y
   **verificación de correo**: al registrarse, el enlace de verificación
   regresa a esta app publicada, ya no a localhost.
+- Trae el **logo de Creatibox** sobre la pantalla de acceso
+  (`public/logo.png`, mostrado por `components/App.tsx`) y el **favicon**
+  con el monograma CB en la pestaña del navegador (`public/favicon.png` y
+  `public/icon.png`, declarados en los `metadata.icons` de
+  `app/layout.tsx`).
 
 ## Paso 1 — Subir esta carpeta a GitHub
 
@@ -31,6 +36,13 @@ por ejemplo `https://pacientes-odontologia.vercel.app`.
    Alternativa sin GitHub: con la CLI de Vercel (`npm i -g vercel`), entra a
    esta carpeta y ejecuta `vercel` para el primer despliegue y
    `vercel --prod` para publicarlo.
+
+> **Si ya habías subido una versión anterior a GitHub:** vuelve a subir el
+> contenido completo de esta carpeta **reemplazando todos los archivos**,
+> incluidos `components/App.tsx` y `app/layout.tsx`. Si solo se suben las
+> imágenes de `public/`, el logo y el favicon no se ven: quien muestra el
+> logo es `components/App.tsx` y quien declara el favicon es
+> `app/layout.tsx`. Al confirmar la subida, Vercel redespliega solo.
 
 ## Paso 2 — Importar en Vercel
 
