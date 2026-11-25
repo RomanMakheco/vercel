@@ -1885,7 +1885,15 @@ function AuthScreen({
   };
 
   return (
-    <div className="flex min-h-screen items-start justify-center bg-[var(--bg)] px-4 pt-14 sm:items-center sm:pt-0">
+    <div className="flex min-h-screen flex-col items-center justify-start bg-[var(--bg)] px-4 pt-10 sm:justify-center sm:pt-0">
+      <div className="mb-4 w-full max-w-sm rounded-2xl bg-white px-5 py-4 shadow-sm">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/logo.png"
+          alt="Creatibox"
+          className="mx-auto h-auto w-full max-w-[300px]"
+        />
+      </div>
       <main className="w-full max-w-sm rounded-2xl bg-[var(--surface)] p-6 shadow-sm">
         <h1 className="font-display text-2xl font-bold text-[var(--text)]">
           {mode === "login"
